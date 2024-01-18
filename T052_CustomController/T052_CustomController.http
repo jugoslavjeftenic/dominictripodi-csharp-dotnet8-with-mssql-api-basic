@@ -1,0 +1,6 @@
+@T052_CustomController_HostAddress = http://localhost:5142
+
+GET {{T052_CustomController_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
