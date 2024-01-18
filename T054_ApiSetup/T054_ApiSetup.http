@@ -1,0 +1,6 @@
+@T054_ApiSetup_HostAddress = http://localhost:5083
+
+GET {{T054_ApiSetup_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
