@@ -96,5 +96,22 @@ namespace T060_UsersController.Controllers
 
 			throw new Exception("Failed to Add user");
 		}
+
+		[HttpDelete("DeleteUser/{userId}")]
+		public IActionResult DeleteUser(int userId)
+		{
+			string sql = @$"
+			DELETE
+			FROM [TutorialAppSchema].[Users]
+			WHERE [UserId] = {userId}
+			";
+
+			if (_dapper.ExecuteSql(sql))
+			{
+				return Ok();
+			}
+
+			throw new Exception("Failed to Delete user");
+		}
 	}
 }
