@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using T060_UsersController.Data;
+using T060_UsersController.Dtos;
 using T060_UsersController.Models;
 
 namespace T060_UsersController.Controllers
@@ -61,8 +62,8 @@ namespace T060_UsersController.Controllers
 				[Active] = '{user.Active}'
 			WHERE UserId = {user.UserId}
 			";
-            
-            if (_dapper.ExecuteSql(sql))
+
+			if (_dapper.ExecuteSql(sql))
 			{
 				return Ok();
 			}
@@ -71,7 +72,7 @@ namespace T060_UsersController.Controllers
 		}
 
 		[HttpPost("AddUser")]
-		public IActionResult AddUser(UserModel user)
+		public IActionResult AddUser(UserToAddDto user)
 		{
 			string sql = @$"
 			INSERT INTO [TutorialAppSchema].[Users] (
@@ -87,7 +88,7 @@ namespace T060_UsersController.Controllers
 				'{user.Gender}',
 				'{user.Active}'
 			)";
-			Console.WriteLine(sql);
+
 			if (_dapper.ExecuteSql(sql))
 			{
 				return Ok();
