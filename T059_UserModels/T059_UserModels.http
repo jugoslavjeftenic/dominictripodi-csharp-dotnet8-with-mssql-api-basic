@@ -1,0 +1,6 @@
+@T059_UserModels_HostAddress = http://localhost:5293
+
+GET {{T059_UserModels_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

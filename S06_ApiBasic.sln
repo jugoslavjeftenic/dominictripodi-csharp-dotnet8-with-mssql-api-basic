@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T054_ApiSetup", "T054_ApiSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T057_DatabaseConnection", "T057_DatabaseConnection\T057_DatabaseConnection.csproj", "{8AADE9D1-7EF6-42B6-9100-2B48A5777602}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T059_UserModels", "T059_UserModels\T059_UserModels.csproj", "{9CA5A32B-EB0A-4B26-A387-EDF0A197E638}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8AADE9D1-7EF6-42B6-9100-2B48A5777602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AADE9D1-7EF6-42B6-9100-2B48A5777602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AADE9D1-7EF6-42B6-9100-2B48A5777602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CA5A32B-EB0A-4B26-A387-EDF0A197E638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CA5A32B-EB0A-4B26-A387-EDF0A197E638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CA5A32B-EB0A-4B26-A387-EDF0A197E638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CA5A32B-EB0A-4B26-A387-EDF0A197E638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
