@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T050_Controllers", "T050_Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T052_CustomController", "T052_CustomController\T052_CustomController.csproj", "{9F9BF9E6-3179-4DE0-89CC-5CDAB82BA87C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T054_ApiSetup", "T054_ApiSetup\T054_ApiSetup.csproj", "{12222C32-69C6-47F5-9CF8-C07431D90F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T054_ApiSetup", "T054_ApiSetup\T054_ApiSetup.csproj", "{12222C32-69C6-47F5-9CF8-C07431D90F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T057_DatabaseConnection", "T057_DatabaseConnection\T057_DatabaseConnection.csproj", "{8AADE9D1-7EF6-42B6-9100-2B48A5777602}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{12222C32-69C6-47F5-9CF8-C07431D90F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12222C32-69C6-47F5-9CF8-C07431D90F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12222C32-69C6-47F5-9CF8-C07431D90F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AADE9D1-7EF6-42B6-9100-2B48A5777602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AADE9D1-7EF6-42B6-9100-2B48A5777602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AADE9D1-7EF6-42B6-9100-2B48A5777602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AADE9D1-7EF6-42B6-9100-2B48A5777602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
