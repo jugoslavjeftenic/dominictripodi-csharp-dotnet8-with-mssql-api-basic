@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using T065_EntityFramework.Data;
 using T065_EntityFramework.Dtos;
 using T065_EntityFramework.Models;
@@ -11,6 +11,10 @@ namespace T065_EntityFramework.Controllers
 	public class UsersController(IConfiguration config) : ControllerBase
 	{
 		private readonly DataContextEF _ef = new(config);
+		IMapper _mapper = new Mapper(new MapperConfiguration(cfg =>
+		{
+			cfg.CreateMap<UserToAddDto, UserModel>();
+		}));
 
 		[HttpGet("GetUsers")]
 		public IEnumerable<UserModel> GetUsers()
@@ -50,14 +54,18 @@ namespace T065_EntityFramework.Controllers
 		[HttpPost("AddUser")]
 		public IActionResult AddUser(UserToAddDto user)
 		{
-			UserModel userToAdd = new()
-			{
-				FirstName = user.FirstName,
-				LastName = user.LastName,
-				Email = user.Email,
-				Gender = user.Gender,
-				Active = user.Active
-			};
+			//Without of AutoMapper
+			//UserModel userToAdd = new()
+			//{
+			//	FirstName = user.FirstName,
+			//	LastName = user.LastName,
+			//	Email = user.Email,
+			//	Gender = user.Gender,
+			//	Active = user.Active
+			//};
+
+			//With AutoMapper
+			UserModel userToAdd = _mapper.Map<UserModel>(user);
 
 			_ef.Add(userToAdd);
 			if (_ef.SaveChanges() > 0)
