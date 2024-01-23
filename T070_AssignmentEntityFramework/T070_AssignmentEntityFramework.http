@@ -1,0 +1,6 @@
+@T070_AssignmentEntityFramework_HostAddress = http://localhost:5299
+
+GET {{T070_AssignmentEntityFramework_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
