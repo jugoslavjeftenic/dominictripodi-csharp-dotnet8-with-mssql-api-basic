@@ -9,7 +9,7 @@ namespace T070_AssignmentEntityFramework.Data
 
 		public virtual DbSet<UserModel> Users { get; set; }
 		public virtual DbSet<UserSalaryModel> UserSalarys { get; set; }
-		public virtual DbSet<UserJobInfoModel> UserJobInfos { get; set; }
+		public virtual DbSet<UserJobInfoModel> UserJobInfo { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
