@@ -1,7 +1,5 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using T070_AssignmentEntityFramework.Data;
-using T070_AssignmentEntityFramework.Dtos;
 using T070_AssignmentEntityFramework.Models;
 
 namespace T070_AssignmentEntityFramework.Controllers
