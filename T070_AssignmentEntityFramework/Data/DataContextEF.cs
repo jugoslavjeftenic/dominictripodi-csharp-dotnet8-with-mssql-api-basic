@@ -8,7 +8,7 @@ namespace T070_AssignmentEntityFramework.Data
 		private readonly IConfiguration _config = config;
 
 		public virtual DbSet<UserModel> Users { get; set; }
-		public virtual DbSet<UserSalaryModel> UserSalarys { get; set; }
+		public virtual DbSet<UserSalaryModel> UserSalary { get; set; }
 		public virtual DbSet<UserJobInfoModel> UserJobInfo { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
